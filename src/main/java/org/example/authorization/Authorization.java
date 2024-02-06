@@ -7,7 +7,6 @@ import org.example.configuration.DriverManager;
 import org.example.page.AuthorizationPage;
 import org.example.page.MainPage;
 
-
 /**
  * Класс авторизации на странице
  */
