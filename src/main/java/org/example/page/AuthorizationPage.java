@@ -13,7 +13,6 @@ public class AuthorizationPage extends BasePage{
     private WebElement loginField;
     @FindBy(name = "password")
     private WebElement passwordField;
-    private Configurations configurations;
     public AuthorizationPage checkOpenPage() {
         return this;
     }

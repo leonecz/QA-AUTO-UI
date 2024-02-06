@@ -11,8 +11,4 @@ public class BasePage {
     public BasePage() {
         PageFactory.initElements(DriverManager.getDriver(), this);
     }
-
-    public WebElement getElement(By xpath) {
-        return getDriver().findElement(xpath);
-    }
 }
