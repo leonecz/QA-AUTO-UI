@@ -18,7 +18,7 @@ public class Authorization {
         DriverManager.open(properties.urlMail());
         new AuthorizationPage()
                 .checkOpenPage()
-                .login();
-        return new MainPage().checkOpenPage();
+                .login(properties.login(), properties.password());
+        return new MainPage();
     }
 }

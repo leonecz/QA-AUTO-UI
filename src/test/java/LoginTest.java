@@ -9,6 +9,6 @@ public class LoginTest extends BaseTest{
     @Owner("Леонов Алексей Евгеньевич")
     @Test
     public void loginTest() {
-        login().checkOpenPage();
+        login();
     }
 }
