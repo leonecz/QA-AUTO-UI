@@ -21,4 +21,15 @@ public class Authorization {
                 .login(properties.login(), properties.password());
         return new MailMainPage();
     }
+
+    @Step("Авторизоваться на mail.ru")
+    public AuthorizationPage loginIncorrectPassword() {
+        DriverManager.open(properties.urlMail());
+        new AuthorizationPage()
+                .checkOpenPage()
+                .login(properties.login(), "123");
+        return new AuthorizationPage();
+    }
+
+//    @Step("Проверить, что ")
 }

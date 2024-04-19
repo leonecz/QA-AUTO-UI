@@ -15,6 +15,8 @@ public class AuthorizationPage extends BasePage {
     private WebElement loginField;
     @FindBy(name = "password")
     private WebElement passwordField;
+    @FindBy(xpath = "//*[@data-test-id='password-input-error']")
+    private WebElement incorrectPasswordText;
 
     public AuthorizationPage checkOpenPage() {
         return this;
@@ -27,5 +29,9 @@ public class AuthorizationPage extends BasePage {
         return new MailMainPage();
     }
 
-
+    @Step("Проверить, что под поле ввода 'Пароль' отобразилась надпись 'Неверный пароль, попробуйте ещё раз'")
+    public AuthorizationPage checkTextUnderPassword() {
+        elementContainText(incorrectPasswordText, "Неверный пароль, попробуйте ещё раз");
+        return this;
+    }
 }

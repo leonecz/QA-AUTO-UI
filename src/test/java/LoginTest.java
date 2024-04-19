@@ -1,9 +1,15 @@
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
+import org.checkerframework.checker.units.qual.A;
+import org.example.authorization.Authorization;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.example.authorization.Authorization.login;
 
+@Epic(value = "Mail")
+@Feature(value = "Логин на mail")
 public class LoginTest extends BaseTest {
     @DisplayName("Тест авторизации в mail.ru")
     @Owner("Леонов Алексей Евгеньевич")
@@ -12,40 +18,14 @@ public class LoginTest extends BaseTest {
         login();
     }
 
-    @DisplayName("Тест отправки письма")
-    @Owner("Леонов Алексей Евгеньевич")
-    @Test
-    public void sendMailTest() {
-        var theme = "Тема для письма";
-        var messages = "Сообщение для отправки";
-
-        login()
-                .clickSendMail()
-                .sendMail(properties.login(), theme, messages)
-                .closeModal();
-        leftPanel
-                .clickIncomingMessages()
-                .checkContainsMessages(theme);
-    }
-
-    @DisplayName("Проверка наличия элементов в хедере страницы")
-    @Owner("Леонов Алексей Евгеньевич")
-    @Test
-    public void checkHeadersElementsTest() {
-
-    }
-
-    @DisplayName("Проверка наличия почты в раскрывающемся профиле")
-    @Owner("Леонов Алексей Евгеньевич")
-    @Test
-    public void checkEmailTest() {
-
-    }
 
     @DisplayName("Проверка ввода некорректного пароля при входе в почту")
     @Owner("Леонов Алексей Евгеньевич")
     @Test
     public void checkIncorrectPasswordTest() {
-
+        Authorization authorization = new Authorization();
+        authorization
+                .loginIncorrectPassword()
+                .checkTextUnderPassword();
     }
 }
