@@ -1,7 +1,6 @@
 package org.example;
 
 import io.qameta.allure.Step;
-import org.example.configuration.DriverManager;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 

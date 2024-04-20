@@ -18,14 +18,11 @@ public class LoginTest extends BaseTest {
         login();
     }
 
-
     @DisplayName("Проверка ввода некорректного пароля при входе в почту")
     @Owner("Леонов Алексей Евгеньевич")
     @Test
     public void checkIncorrectPasswordTest() {
         Authorization authorization = new Authorization();
-        authorization
-                .loginIncorrectPassword()
-                .checkTextUnderPassword();
+        authorization.loginIncorrectPassword().checkTextUnderPassword();
     }
 }
