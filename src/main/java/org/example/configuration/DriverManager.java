@@ -17,7 +17,7 @@ public class DriverManager {
 
     private static RemoteWebDriver init() {
         RemoteWebDriver driver = new ChromeDriver();
-        driver.manage().window().setSize(new Dimension(1920, 1080));
+        driver.manage().window().setSize(new Dimension(1620, 1080));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
         return driver;
