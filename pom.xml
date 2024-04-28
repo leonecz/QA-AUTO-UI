@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>UITests</artifactId>
+    <artifactId>AutoTest</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -14,7 +14,7 @@
         <maven.compiler.target>21</maven.compiler.target>
         <junit.jupiter.version>5.8.1</junit.jupiter.version>
         <junit.platform.version>1.8.1</junit.platform.version>
-        <allure.junit5.version>test</allure.junit5.version>
+        <allure.junit5.version>2.25.0</allure.junit5.version>
         <allure.version>2.25.0</allure.version>
         <aspectj.version>1.9.21</aspectj.version>
         <logger.version>2.23.1</logger.version>
