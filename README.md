@@ -1,4 +1,4 @@
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Тестирование+UI+и+API)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Автоматизация+тестов+UI+и+API)](https://git.io/typing-svg)
 <h1>Данный репозиторий включает в себя два фреймворка:</h1>
 <h3>1. Тестирование UI</h3>
 <h4>1.1 Инструкция по запуску</h4>
