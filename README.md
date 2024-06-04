@@ -6,6 +6,8 @@
 <li>Добавить новую дирректирию resources в модуль UITest в пакет main</li>
  <li>Создать в ней файл configuration.properties</li> 
  <li>Добавить в данный файл следующие параметры</li>
-   ![properties](https://github.com/leonecz/QA-AUTO-UI/assets/157956969/9d766c9c-ba73-4fd1-98b9-709f6e486cb1)
+   <tt>urlMail=https://account.mail.ru/login</tt></br>
+   <tt>login=ваша почта</tt></br>
+   <tt>password=вашпароль</tt></br>
 
 3. Тестирование API   
