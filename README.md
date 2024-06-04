@@ -6,6 +6,6 @@
 <li>Добавить новую дирректирию resources в модуль UITest в пакет main</li>
  <li>Создать в ней файл configuration.properties</li> 
  <li>Добавить в данный файл следующие параметры</li>
-   ![properties](https://github.com/leonecz/QA-AUTO-UI/assets/157956969/935fe1bf-ddb3-4121-88a2-211079093ad5)
+   ![properties](https://github.com/leonecz/QA-AUTO-UI/assets/157956969/9d766c9c-ba73-4fd1-98b9-709f6e486cb1)
 
 3. Тестирование API   
